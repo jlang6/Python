@@ -1,8 +1,0 @@
-6-14-2020, 14:50
-Value Error: playCard function returned a null value instead of a card
-Trump suit:  S
-Cards already played (in order):  []
-CPU 2's cards: 3 of Spades , 7 of Diamonds , Queen of Clubs
-Card played using simplePlay: 3 of Spades
-
-
