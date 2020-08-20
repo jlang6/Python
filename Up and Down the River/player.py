@@ -5,8 +5,6 @@
 
 from deck import Deck
 from card import Card
-from tkinter import *
-from PIL import Image, ImageTk
 
 
 class Player:
@@ -124,30 +122,5 @@ class Player:
         else:
             diff = abs(self.tricks - self.bets)
             self.points -= diff * 5
-
-
-
-
-
-    def widget(self):
-        window = Tk()
-        column = 0
-        button_salary = Button(window, text="card 1", command=self.salarycheck)
-        button_salary.grid(row=0, column=0, columnspan=2)
-
-    def salarycheck(self):
-        button_salary.configure(bg="grey")
-
-    def photo(self):
-        window = Tk()
-        path = "actuary_joke.ppm"
-        im = Image.open(path)
-        logan = ImageTk.PhotoImage(im)
-        label = Label(window, image=logan)
-        label.image = logan
-        label.pack()
-        window.pack()
-        window.mainloop()
-
-p1 = Player("Justin")
-p1.photo()
+            
+            
