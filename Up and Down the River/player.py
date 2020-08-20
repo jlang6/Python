@@ -91,7 +91,6 @@ class Player:
             for i in range(len(self.cards) - 1):
                 print("%s (%d), " % (self.cards[i], i + 1), end="")
             print("%s (%d) " % (self.cards[-1], len(self.cards)))
-            self.widget()
             index = input("\nWhich card to play? (Type the number) ")
             while not index.isnumeric() or int(index) < 0 or int(index) > len(self.cards):
                 index = input("Please type the number of the card you wish to play. ")
